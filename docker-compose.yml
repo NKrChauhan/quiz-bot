@@ -30,6 +30,9 @@ services:
       - PGPORT=5432
       - POSTGRES_USER=postgres
 
+    ports:
+      - "5432:5432"
+
     restart: "on-failure"
 
  # Redis
